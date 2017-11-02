@@ -1,0 +1,30 @@
+{
+  "name": "google-maps-desktop",
+  "version": "0.0.1",
+  "description": "Google Maps Desktop App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node-sass src/assets/stylesheets/styles.scss src/assets/stylesheets/styles.css && browserify src/assets/geolocation.js -o src/assets/bundle.js",
+    "start": "electron .",
+    "build": "npm run dev && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maddhruv/google-maps-desktop.git"
+  },
+  "author": "Dhruv Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maddhruv/google-maps-desktop/issues"
+  },
+  "homepage": "https://github.com/maddhruv/google-maps-desktop#readme",
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "electron": "^1.7.9",
+    "node-sass": "^4.5.3"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

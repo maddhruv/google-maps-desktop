@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+#container{
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+#box{
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 200px;
+  height: 25px;
+  box-sizing: border-box;
+  border-radius: 2px 2px 0 0;
+  border-bottom: 1px solid transparent;
+  padding: 12px 100px 11px 64px;
+  #box-inner{
+    margin: 8px 0px 8px 8px;
+    position: absolute;
+    z-index: 10;
+  }
+}
+#map{
+  height: 100vh;
+  z-index: 1;
+}
