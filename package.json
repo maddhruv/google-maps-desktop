@@ -1,19 +1,25 @@
 {
   "name": "google-maps-desktop",
-  "version": "0.0.1",
-  "description": "Google Maps Desktop App",
+  "version": "0.0.2",
+  "description": "Google Maps Desktop App for Linux, Mac OS and Windows",
   "main": "index.js",
+  "private": true,
+  "productName": "Google Maps",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node-sass src/assets/stylesheets/styles.scss src/assets/stylesheets/styles.css && browserify src/assets/geolocation.js -o src/assets/bundle.js",
     "start": "electron .",
-    "build": "npm run dev && npm start"
+    "build": "yarn run dev && yarn run start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maddhruv/google-maps-desktop.git"
   },
-  "author": "Dhruv Jain",
+  "author": {
+    "name": "Dhruv Jain",
+    "url": "https://maddhruv.github.io",
+    "email": "dhruvjainpenny@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/maddhruv/google-maps-desktop/issues"
@@ -21,7 +27,9 @@
   "homepage": "https://github.com/maddhruv/google-maps-desktop#readme",
   "devDependencies": {
     "browserify": "^14.5.0",
-    "electron": "^1.7.9",
+    "electron": "^1.4.15",
+    "electron-builder": "^19.45.4",
+    "electron-packager": "^9.1.0",
     "node-sass": "^4.5.3"
   },
   "dependencies": {

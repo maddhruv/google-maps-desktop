@@ -1,4 +1,5 @@
 const electron = require('electron')
+const path = require('path');
 const app = electron.app
 
 const BrowserWindow = electron.BrowserWindow
@@ -12,7 +13,7 @@ function createWindow () {
     title: 'Google Maps',
     autoHideMenuBar: true,
     show: true,
-    icon: `file://${__dirname}/index.html`
+    icon: path.join(__dirname, 'src/assets/icons/png/64x64.png')
   });
 
   mainWindow.loadURL(`file://${__dirname}/src/index.html`)

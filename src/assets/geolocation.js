@@ -8,6 +8,11 @@ var lat, lng, map;
       center: {lat: lat, lng: lng},
       zoom: 15
     });
+    marker = new google.maps.Marker({
+      position: {lat: lat, lng: lng},
+      map: map,
+      icon: 'assets/marker.png'
+    });
   }
 
   $.post('https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCUtDeo_beNeQVjrz4QQVDnbmL6_mKgYzs', (data) => {
